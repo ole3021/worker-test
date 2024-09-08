@@ -1,0 +1,28 @@
+{
+  "name": "ts-starter-2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "format": "prettier --write 'src/**/*.ts'",
+    "build": "rimraf ./dist && tsc",
+    "test": "NODE_ENV=test jest",
+    "test:unit": "NODE_ENV=test jest --verbose --config jest.config.spec.js",
+    "test:intg": "NODE_ENV=test jest --verbose --config jest.config.intg.js",
+    "test:e2e": "NODE_ENV=test jest --verbose --config jest.config.e2e.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
